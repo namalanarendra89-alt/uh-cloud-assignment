@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UH Cloud Services - 23082474</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header h1 {
+            color: #003366;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header h2 {
+            color: #00509e;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h3 {
+            color: #003366;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #00509e;
+            padding-bottom: 8px;
+        }
+        
+        .student-info {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-left: 5px solid #1976d2;
+        }
+        
+        .network-info {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-left: 5px solid #388e3c;
+        }
+        
+        .services-info {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-left: 5px solid #f57c00;
+        }
+        
+        .deployment-info {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+            border-left: 5px solid #c2185b;
+        }
+        
+        .info-item {
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 6px;
+            border-left: 3px solid #00509e;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #4caf50;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-list li:before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header h2 {
+                font-size: 1.4em;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 University of Hertfordshire</h1>
+            <h2>Cloud Services Portal</h2>
+            <p style="color: #666; font-size: 1.1em;">7COM1076 - Network Emulation & Cloud Computing</p>
+        </div>
+        
+        <div class="content-grid">
+            <div class="card student-info">
+                <h3>🎓 Student Information</h3>
+                <div class="info-item">
+                    <strong>Student ID:</strong> 23082474
+                </div>
+                <div class="info-item">
+                    <strong>Course:</strong> 7COM1076 - Network Emulation
+                </div>
+                <div class="info-item">
+                    <strong>Assignment:</strong> Task 2 - Cloud Services
+                </div>
+                <div class="info-item">
+                    <strong>Academic Year:</strong> 2025/26
+                </div>
+            </div>
+            
+            <div class="card network-info">
+                <h3>🌐 Network Configuration</h3>
+                <div class="info-item">
+                    <strong>Switches:</strong> S1, S2, S3 (Linear Topology)
+                </div>
+                <div class="info-item">
+                    <strong>Hosts:</strong> H1 (10.0.0.1), H2 (10.0.0.2)
+                </div>
+                <div class="info-item">
+                    <strong>Topology:</strong> H1 ↔ S1 ↔ S2 ↔ S3 ↔ H2
+                </div>
+                <div class="info-item">
+                    <strong>IP Range:</strong> 10.0.0.0/8
+                </div>
+            </div>
+            
+            <div class="card services-info">
+                <h3>🛠️ Cloud Services</h3>
+                <ul class="feature-list">
+                    <li>Static Web Hosting</li>
+                    <li>Network Connectivity</li>
+                    <li>Cloud Integration</li>
+                    <li>Multi-tier Architecture</li>
+                    <li>Render.com Deployment</li>
+                    <li>GitHub CI/CD</li>
+                </ul>
+            </div>
+            
+            <div class="card deployment-info">
+                <h3>🚀 Deployment Status</h3>
+                <div class="info-item">
+                    <strong>Platform:</strong> Render.com 
+                    <span class="status-badge">Live</span>
+                </div>
+                <div class="info-item">
+                    <strong>Repository:</strong> GitHub
+                    <span class="status-badge">Connected</span>
+                </div>
+                <div class="info-item">
+                    <strong>Build:</strong> Automatic
+                    <span class="status-badge">Enabled</span>
+                </div>
+                <div class="info-item">
+                    <strong>SSL:</strong> HTTPS
+                    <span class="status-badge">Active</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="text-align: center;">
+            <h3>🔗 Access Points</h3>
+            <p style="margin-bottom: 15px;">This cloud service is accessible through multiple endpoints:</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                <div class="info-item">
+                    <strong>Mininet H1:</strong> curl http://your-render-app.onrender.com
+                </div>
+                <div class="info-item">
+                    <strong>Local Network:</strong> http://10.0.0.2
+                </div>
+                <div class="info-item">
+                    <strong>Public URL:</strong> https://your-render-app.onrender.com
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 University of Hertfordshire - 7COM1076 Network Emulation Assignment</p>
+            <p style="color: #666; margin-top: 10px;">Student ID: 23082474 | Cloud Services Implementation</p>
+        </div>
+    </div>
+</body>
+</html>
